@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+// mobile first
+:root {
+
+  // Colors
+  --White: hsl(0, 0%, 100%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+
+  // Font family
+  --outfit: 'Outfit', sans-serif;
+}
+
+// resetting default browser styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: var(--outfit);
+  background-color: var(--Light-gray);
+
+  .card {
+    width: 320px;
+    height: 490px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .1);
+    background-color: var(--White);
+
+    .card__qr {
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    .card__text {
+      padding: 15px;
+      text-align: center;
+
+      .card__text__title {
+        font-size: .7em;
+        color: var(--Dark-blue);
+      }
+
+      .card__text__info {
+        margin-top: 1.2em;
+        color: var(--Grayish-blue);
+      }
+    }
+  }
+}
